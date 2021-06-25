@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <mate name="viewport" content="width=device-width, initial-scale=1.0"></mate>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/submit.css') }}"/>
+    <title>学习数据</title>
+</head>
+<body>
+    <div id="submit_box">
+        <h1>{{time}}&ensp;&ensp;学习数据</h1>
+        <div class="input_box">
+            <div class="input_text">
+                <div class="small_photo">&ensp;&ensp;数学：</div>
+                <input type="text" id= "math" placeholder="0"/>
+            </div>
+            <div class="input_text">
+                <div class="small_photo">&ensp;&ensp;英语：</div>
+                <input type="text" id= "english" placeholder="0"/>
+            </div>
+            <div class="input_text">
+                <div class="small_photo">专业课：</div>
+                <input type="text" id= "specialty" placeholder="0"/>
+            </div>
+            <div class="input_text">
+                <div class="small_photo">&ensp;&ensp;政治：</div>
+                <input type="text" id= "politics" placeholder="0"/>
+            </div>
+            <div class="input_text">
+                <div class="small_photo">&ensp;&ensp;单词：</div>
+                <input type="text" id= "vocabulary" placeholder="0"/>
+            </div>
+            <div class="input_text">
+                <div class="small_photo">&ensp;&ensp;口语：</div>
+                <input type="text" id= "spoken" placeholder="0"/>
+            </div>
+            <div class="input_text">
+                <div class="small_photo">&ensp;&ensp;听力：</div>
+                <input type="text" id= "hearing" placeholder="0"/>
+            </div>
+            <div class="input_text">
+                <div class="small_photo">&ensp;&ensp;备注：</div>
+                <input type="text" id= "remarks" placeholder=""/>
+            </div>
+            <input type="button" class="input_button" id= "btn" value="提交"/>
+        </div>
+    </div>
+    <script src={{ url_for('static', filename='js/flexible.js') }}></script>
+    <script src={{ url_for('static', filename='js/jquery-3.6.0.min.js') }}></script>
+    <script src={{ url_for('static', filename='js/submit.js') }}></script>
+</body>
+</html>

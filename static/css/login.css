@@ -1,0 +1,88 @@
+html, body { height: 100%; overflow: auto; max-height: 100%;}
+
+body, body * {
+    max-height: 1000000px;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-image: url(../image/login_background.jpg);
+    background-repeat: no-repeat;
+}
+
+#login_box
+{
+    margin: 1.25rem auto 0;
+    padding: 0.105rem 0.292rem;
+    background-color: #00000090;
+    width: 2.08rem;
+    height: 1.67rem;
+    border-radius: 0.052rem;
+    text-align: center;
+}
+
+#login_box h1
+{
+    font-size: 0.2rem;
+    color: white;
+}
+
+#login_box .input_box
+{
+    margin-top: 0.26rem;
+}
+
+#login_box .input_box .input_text
+{
+    margin-top: 0.104rem;
+    display: -webkit-flex;
+    display: flex;
+}
+
+#login_box .input_box .input_text .small_photo
+{
+    -webkit-flex: 1;
+    flex: 1;
+    border: 0;
+    padding: 0;
+    background-size: 100% 100%;
+    -moz-background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#login_box .input_box .input_text #username
+{
+    background-image: url(../image/username.png);
+}
+
+#login_box .input_box .input_text #password
+{
+    background-image: url(../image/password.png);
+}
+
+#login_box .input_box .input_text input
+{
+    -webkit-flex: 9;
+    flex: 9;
+    border: 0;
+    font-size: 0.1rem;
+    padding: 0.052rem 0.052rem;
+    border-bottom: 0.0052rem solid white;
+    background-color: #00000000;
+    color: white;
+}
+
+#login_box .input_box .input_button
+{
+    border: 0;
+    width: 0.833rem;
+    height: 0.125rem;
+    color: white;
+    font-size: 0.1rem;
+    margin-top: 0.167rem;
+    border-radius: 0.104rem;
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}

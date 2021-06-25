@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <mate name="viewport" content="width=device-width, initial-scale=1.0"></mate>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}"/>
+    <title>Login</title>
+</head>
+<body>
+    <div id="login_box">
+        <h1>LOGIN</h1>
+        <div class="input_box">
+            <div class="input_text">
+                <div class="small_photo" id="username"></div>
+                <input type="text" id= "un" placeholder="Username"/>
+            </div>
+            <div class="input_text">
+                <div class="small_photo" id="password"></div>
+                <input type="password" id= "pw" placeholder="Password"/>
+            </div>
+            <input type="button" class="input_button" id= "btn" value="LOGIN"/>
+        </div>
+    </div>
+    <script src={{ url_for('static', filename='js/flexible.js') }}></script>
+    <script src={{ url_for('static', filename='js/jquery-3.6.0.min.js') }}></script>
+    <script src={{ url_for('static', filename='js/login.js') }}></script>
+</body>
+</html>
